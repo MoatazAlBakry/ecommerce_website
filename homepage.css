@@ -3,19 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media (max-width: 768px) {
-    .nav_links {
-        display: none;
-    }
 
-    main > div:last-child {
-        flex-direction: column;
-    }
-
-    main img {
-        max-width: 100%;
-    }
-}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -72,16 +60,22 @@
     color: #007bff;
 }
 
+.mobile {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 main {
     margin-top: 80px;
     padding: 6rem 5%;
 }
 
-main > div:first-child {
+.pad {
     background-image: image-set(url(images/Leonardo_Phoenix_10_A_vibrant_website_background_image_in_a_he_0.jpg));
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     padding: 4rem 2rem;
     text-align: center;
     border-radius: 10px;
@@ -109,7 +103,7 @@ main button:hover {
     background-color: #0056b3;
 }
 
-main > div:last-child {
+.content {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -125,4 +119,56 @@ main p {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .pad {
+        padding: 2rem 1rem;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main img {
+        max-width: 100%;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    main button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
 }
