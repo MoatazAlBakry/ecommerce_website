@@ -325,16 +325,3 @@ body.dark-mode button:hover {
 body.dark-mode .nav_links {
     background-color: #1e1e1e; 
 }
-body.dark-mode .nav_links ul {
-    background-color: #1e1e1e; /* Ensure the ul also has a dark background */
-}
-body.dark-mode .nav_links li {
-    color: #cccccc; 
-}
-
-body.dark-mode .nav_links li:hover {
-    color: #007bff; 
-}
-body.dark-mode .nav_links i {
-    color: #cccccc; 
-}
