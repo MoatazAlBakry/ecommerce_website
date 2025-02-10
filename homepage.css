@@ -74,11 +74,14 @@
 
 main {
     margin-top: 80px;
-    padding: 2rem 5%;
+    padding: 6rem 5%;
 }
 
 main > div:first-child {
-    background-color: #f8f9fa;
+    background-image: image-set(url(images/Leonardo_Phoenix_10_A_vibrant_website_background_image_in_a_he_0.jpg));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     padding: 4rem 2rem;
     text-align: center;
     border-radius: 10px;
