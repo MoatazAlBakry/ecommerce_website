@@ -58,6 +58,16 @@ body.dark-mode .footer-bottom {
     list-style: none;
 }
 
+.content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+.content :first-child {
+    flex: 1;
+    color: #757575;
+}
 .nav_links li {
     display: flex;
     align-items: center;
@@ -131,12 +141,6 @@ main button:hover {
     background-color: #0056b3;
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 3rem;
-}
 
 main img {
     max-width: 50%;
@@ -261,6 +265,114 @@ main p {
         font-size: 1rem;
     }
 }
+/* Product cards css */
+.products {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Newsletter css */
+
+.newsletter {
+    padding: 2rem 5%;
+    text-align: center;
+    background-color: #00254d;
+    color: white;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.newsletter-form input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.newsletter-form button {
+    background-color: #1d0358;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #00408070;
+}
 
 
 /* Dark mode info */
@@ -320,8 +432,35 @@ body.dark-mode button {
 body.dark-mode button:hover {
     background-color: #0056b3;
 }
+/* add to cart dark mode options */
+body.dark-mode .product-card {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
 
+body.dark-mode .product-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .product-card p {
+    color: #007bff;
+}
+
+body.dark-mode .product-card button {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+body.dark-mode .product-card button:hover {
+    background-color: #0056b3;
+}
 /* fix for the Dark mode styles in .nav_links showing up as white*/
 body.dark-mode .nav_links {
     background-color: #1e1e1e; 
+}
+
+body.dark-mode .products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
 }
